@@ -11,7 +11,9 @@ public class Main {
         int alcool = 0;
         int gasolina = 0;
         int diesel = 0;
-        int fim = 0;
+
+
+        System.out.println(" 1.Alcool \n 2.Gasolina \n 3.Diesel \n 4.Fim");
 
         while (numCli != 4) {
 
@@ -25,7 +27,7 @@ public class Main {
             } else if (numCli == 3) {
                 diesel += 1;
 
-            } else{
+            } else {
                 System.out.println("CODIGO INVALIDO :(");
             }
 
