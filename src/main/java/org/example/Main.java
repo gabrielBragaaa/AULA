@@ -7,29 +7,33 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        int x = sc.nextInt();
-        int y = sc.nextInt();
-        System.out.println();
+        int numCli = 0;
+        int alcool = 0;
+        int gasolina = 0;
+        int diesel = 0;
+        int fim = 0;
 
-        while (x != 0 && y != 0) {
+        while (numCli != 4) {
 
-            x = sc.nextInt();
-            y = sc.nextInt();
+            System.out.println("Tipo de Abastecimento: ");
+            numCli = sc.nextInt();
 
-            if (x > 0 && y > 0) {
-                System.out.println("Primeiro Quandrante");
-                System.out.println();
-            } else if (x < 0 && y > 0) {
-                System.out.println("Segundo Quadrante");
-                System.out.println();
-            } else if (x < 0 && y < 0) {
-                System.out.println("Terceiro Quadrante");
-                System.out.println();
-            } else {
-                System.out.println("Quarto Quadrante");
-                System.out.println();
+            if (numCli == 1) {
+                alcool += 1;
+            } else if (numCli == 2) {
+                gasolina += 1;
+            } else if (numCli == 3) {
+                diesel += 1;
+
+            } else{
+                System.out.println("CODIGO INVALIDO :(");
             }
+
         }
+        System.out.println("Alcool : " + alcool);
+        System.out.println("Gasolina : " + gasolina);
+        System.out.println("Diesel : " + diesel);
+        System.out.println("MUITO OBRIGADO :)");
         sc.close();
     }
 }
