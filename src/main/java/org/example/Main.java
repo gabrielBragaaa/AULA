@@ -30,12 +30,13 @@ public class Main {
             } else {
                 System.out.println("CODIGO INVALIDO :(");
             }
-
         }
+        
         System.out.println("Alcool : " + alcool);
         System.out.println("Gasolina : " + gasolina);
         System.out.println("Diesel : " + diesel);
         System.out.println("MUITO OBRIGADO :)");
+        
         sc.close();
     }
 }
