@@ -12,7 +12,6 @@ public class Main {
         int gasolina = 0;
         int diesel = 0;
 
-
         System.out.println(" 1.Alcool \n 2.Gasolina \n 3.Diesel \n 4.Fim");
 
         while (numCli != 4) {
