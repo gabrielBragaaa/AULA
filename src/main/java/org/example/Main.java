@@ -7,15 +7,20 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Insira o valor Inteiro : ");
-       int impar = sc.nextInt();
-        System.out.println("Insira o valor minimo: ");
-        for (int x = sc.nextInt(); x <= impar; x++){
-            if (x % 2 != 0) {
-                System.out.println(x);
-
+        int n = sc.nextInt();
+        int interValor = 0;
+        int in = 0;
+        int out = 0;
+        for (int x = 1 ; x <= n; x++){
+           interValor = sc.nextInt();
+            if (interValor >=10 && interValor<= 20){
+               in +=1;
+            }else{
+                out += 1;
             }
 
         }
+        System.out.println(in + " in");
+        System.out.println(out + " out");
     }
 }
