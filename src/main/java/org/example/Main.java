@@ -11,11 +11,12 @@ public class Main {
 
         int n = sc.nextInt();
 
-        int fatorial = 0;
-        for(int x = 1; x  <= n; x++){
-            fatorial += x * n;
-            System.out.println(fatorial);
-        }
+        int fatorial = 1;
 
+        for (int x = 1; x <=n; x++) {
+           fatorial *= x;
+        }
+        System.out.println(fatorial);
+sc.close();
     }
 }
