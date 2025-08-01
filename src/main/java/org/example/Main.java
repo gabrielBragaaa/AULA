@@ -5,21 +5,24 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        int valorTeiro = sc.nextInt();
-        double caso1, caso2, caso3 = 0;
-        double media = 0;
-        double total = 0;
+        int n = sc.nextInt();
 
-        for (int x = 1; x <= valorTeiro; x++) {
-            caso1 = sc.nextDouble();
-            media =caso1 * 2 + caso1 * 3 + caso1 * 5;
-            total = media / 10;
+        double total,num1 ,num2 = 0;
+
+        for(int x = 0 ; x < n; x++){
+            num1 = sc.nextDouble();
+            num2 = sc.nextDouble();
+            total = num1 / num2;
+            if(num2 == 0){
+                System.out.println("Divisão impossivel");
+            }else{
+                System.out.println(total);
+            }
+
         }
-        System.out.println(total);
-        sc.close();//pesquisar depois
+
     }
 }
