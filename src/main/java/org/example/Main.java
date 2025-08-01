@@ -5,9 +5,17 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
+        int n = sc.nextInt();
+
+        int fatorial = 0;
+        for(int x = 1; x  <= n; x++){
+            fatorial += x * n;
+            System.out.println(fatorial);
+        }
 
     }
 }
