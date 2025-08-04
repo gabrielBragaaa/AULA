@@ -13,10 +13,10 @@ public class Main {
 
         int fatorial = 1;
 
-        for (int x = 1; x <=n; x++) {
-           fatorial *= x;
+        for (int x = 1; x <= n; x++) {
+            fatorial *= x;// este valor ira receber o este resultado durante N vezes.
         }
         System.out.println(fatorial);
-sc.close();
+        sc.close();
     }
 }
