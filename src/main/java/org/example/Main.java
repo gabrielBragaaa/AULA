@@ -10,11 +10,14 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-
-        for (int x = 1; x <= n; x++) {
-            if (n % x == 0) {
-                System.out.println(x);
-            }
+        int quadrado = 1;
+        int cubo = 1;
+        for (int x = 1; x <= n; x++){
+            quadrado = x * x;
+            cubo = x * x * x;
+            System.out.print(x);
+            System.out.print(quadrado);
+            System.out.println(cubo);
         }
     }
 }
