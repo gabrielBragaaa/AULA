@@ -9,15 +9,11 @@ public class Main {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        int n = sc.nextInt();
-        int quadrado = 1;
-        int cubo = 1;
-        for (int x = 1; x <= n; x++){
-            quadrado = x * x;
-            cubo = x * x * x;
-            System.out.print(x);
-            System.out.print(quadrado);
-            System.out.println(cubo);
-        }
+        System.out.print("diGITE A TEMPERATURA EM CELSIUS: ");
+        double c = sc.nextDouble();
+        double f = 9.0 * c / 5.0 + 32.0;
+        System.out.printf("EQUIVALENTE EM FAHRENHEIT: %.1f%n ", f);
+
+        sc.close();
     }
-}
+}    
