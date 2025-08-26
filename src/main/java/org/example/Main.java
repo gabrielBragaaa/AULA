@@ -12,12 +12,14 @@ public class Main {
         String s02 = original.toUpperCase();
         String s03 = original.trim();
         String s04 = original.substring(1);
+        String s05 = original.substring(1,9);
 
         System.out.println("Original: -" + original + " - ");
         System.out.println("ToLowerCase: -" + s01 + " -");
         System.out.println("ToUpperCase: -" + s02 + " -");
         System.out.println("Trim -"+ s03 + "-");
         System.out.println("Substring -" + s04 + "-");
+        System.out.println("Substring -" + s05 + "-");
 
 
     }
