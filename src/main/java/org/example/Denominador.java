@@ -1,6 +1,6 @@
 package org.example;
 
-public class denominador {
+public class Denominador {
 //    int n = sc.nextInt();
 //
 //    double total,num1 ,num2 = 0;
