@@ -14,7 +14,7 @@ public class Main {
         System.out.println("Original: -" + original + " - ");
         System.out.println("ToLowerCase: -" + s01 + " -");
         System.out.println("ToUpperCase: -" + s02 + " -");
-       
+        System.out.println("Trim -"+ s03 + "-");
 
 
     }
