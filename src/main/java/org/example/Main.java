@@ -14,6 +14,7 @@ public class Main {
         String s04 = original.substring(1);
         String s05 = original.substring(1,9);
         String s06 = original.replace("a","W");
+        String s07 = original.replace("abc","WZX");
 
         System.out.println("Original: -" + original + " - ");
         System.out.println("ToLowerCase: -" + s01 + " -");
@@ -22,7 +23,7 @@ public class Main {
         System.out.println("Substring -" + s04 + "-");
         System.out.println("Substring -" + s05 + "-");
         System.out.println("Replace -" + s06 + "-");
-
+        System.out.println("Replace -" + s07 + "-");
 
     }
 }    
