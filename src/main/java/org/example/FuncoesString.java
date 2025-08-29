@@ -1,7 +1,6 @@
 package org.example;
 
 public class FuncoesString {
-
 //    String original = "abcd EFGHIJ ABC abc DEFG  ";
 //
 //    //Minusculo
@@ -14,7 +13,7 @@ public class FuncoesString {
 //    String s07 = original.replace("abc", "WZX");
 //    int i = original.indexOf("bc");
 //    int l = original.lastIndexOf("bc");
-//    String s08 = original.strip();
+//    String[] s08 = original.split(" ");
 //
 //        System.out.println("Original: -" + original + " - ");
 //        System.out.println("ToLowerCase: -" + s01 + " -");
@@ -26,4 +25,5 @@ public class FuncoesString {
 //        System.out.println("Replace -" + s07 + "-");
 //        System.out.println("IndexOff -"+ i + "-");
 //        System.out.println("LastOff -"+ l + "-");
+//        System.out.println("Split -"+ s08[0] +"-");
 }
