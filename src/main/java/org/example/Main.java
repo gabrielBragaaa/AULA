@@ -12,22 +12,26 @@ public class Main {
         int b = sc.nextInt();
         int c = sc.nextInt();
 
-        int higher = max(a,b,c);
-        System.out.println(higher);
+        int higher = max(a, b, c);
 
+        showPrint(higher);
 
         sc.close();
     }
 
-        public static int max(int w, int z, int y) {
-           int aux;
-           if (w > z && w > y){
-               aux = w;
-           }else if(z > y){
-               aux = z;
-           }else{
-               aux = y;
-           }
-           return aux;
+    public static int max(int w, int z, int y) {
+        int aux;
+        if (w > z && w > y) {
+            aux = w;
+        } else if (z > y) {
+            aux = z;
+        } else {
+            aux = y;
         }
+        return aux;
+    }
+
+    public static void showPrint(int result) {
+        System.out.println("O maior numero é : " + result);
+    }
 }    
