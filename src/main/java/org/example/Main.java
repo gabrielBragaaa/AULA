@@ -1,37 +1,28 @@
 package org.example;
 
+import org.example.entities.Product;
+
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {//Função padrão
+    public static void main(String[] args) {
 
+        Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("First number: ");
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
+        Product product = new Product();
 
-        int higher = max(a, b, c);
+        System.out.println("Enter product data: ");
+        System.out.print("Name: ");
+        product.name = sc.nextLine();
+        System.out.print("Price: ");
+        product.price = sc.nextDouble();
+        System.out.print("Quantity in stock:  ");
+        product.quantity = sc.nextInt();
 
-        showPrint(higher);
+        System.out.println(product.name + ", " + product.price + ", " + product.quantity);
 
         sc.close();
     }
-
-    public static int max(int w, int z, int y) {
-        int aux;
-        if (w > z && w > y) {
-            aux = w;
-        } else if (z > y) {
-            aux = z;
-        } else {
-            aux = y;
-        }
-        return aux;
-    }
-
-    public static void showPrint(int result) {
-        System.out.println("O maior numero é : " + result);
-    }
-}    
+}
