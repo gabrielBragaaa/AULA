@@ -18,5 +18,7 @@ public class Main {
         rectangle.height = sc.nextDouble();
 
         System.out.println("AREA = " + rectangle.area());
+        System.out.println("PERIMETER = " + rectangle.perimeter());
+        System.out.println("DIAGONAL = " + rectangle.diagonal());
     }
 }
