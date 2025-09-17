@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.entities.Rectangle;
+import org.example.entities.Employee;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -11,14 +11,15 @@ public class Main {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        Rectangle rectangle = new Rectangle();
+        Employee employee = new Employee();
 
-        System.out.println("Enter rectangle width and height:");
-        rectangle.width = sc.nextDouble();
-        rectangle.height = sc.nextDouble();
+        System.out.print("Name: ");
+        employee.name = sc.nextLine();
+        System.out.print("Gross salary: ");
+        employee.grossSalary = sc.nextDouble();
+        System.out.print("Tax: ");
+        employee.tax = sc.nextDouble();
 
-        System.out.println("AREA = " + rectangle.area());
-        System.out.println("PERIMETER = " + rectangle.perimeter());
-        System.out.println("DIAGONAL = " + rectangle.diagonal());
+        System.out.println(employee);
     }
 }
