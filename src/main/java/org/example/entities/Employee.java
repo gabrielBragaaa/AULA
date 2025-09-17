@@ -7,15 +7,17 @@ public class Employee {
     public double tax;
 
     public String toString() {
-        return "Employee: "
-                + name
+        return  name
                 + ", "
                 + "$ "
-                + String.format("%.2f",grossSalary);
+                + String.format("%.2f",netSalary());
     }
 
     public double netSalary() {
         return grossSalary - tax;
+    }
+    public double increaseSalary(double percentage){
+        return grossSalary += grossSalary / percentage - tax;
     }
 
 }

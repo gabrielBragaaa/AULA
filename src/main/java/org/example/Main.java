@@ -20,6 +20,15 @@ public class Main {
         System.out.print("Tax: ");
         employee.tax = sc.nextDouble();
 
-        System.out.println(employee);
+        System.out.println();
+        System.out.println("Employee: " + employee);
+
+        System.out.println();
+        System.out.print("Which percentage to increase salary? ");
+        double porcentage = sc.nextDouble();
+
+        System.out.println();
+        System.out.printf("Update data: " + employee.name + ", " + "$ " + "%.2f",employee.increaseSalary(porcentage));
+
     }
 }
