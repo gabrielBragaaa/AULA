@@ -6,18 +6,20 @@ public class Employee {
     public double grossSalary;
     public double tax;
 
+    public final int valueForDays = 50;
+
     public String toString() {
-        return  name
+        return name
                 + ", "
                 + "$ "
-                + String.format("%.2f",netSalary());
+                + String.format("%.2f", netSalary());
     }
 
     public double netSalary() {
         return grossSalary - tax;
     }
-    public double increaseSalary(double percentage){
+
+    public double increaseSalary(double percentage) {
         return grossSalary += grossSalary / percentage - tax;
     }
-
 }
