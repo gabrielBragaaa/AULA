@@ -14,9 +14,26 @@ public class Main {
         ContaBancaria contaBancaria = new ContaBancaria();
 
         System.out.println("# BEM VINDO(A) AO BANCO BELEPOC #");
-        System.out.print("Qual o nome do titular: ");
-        contaBancaria.titular = sc.nextLine();
-        
+        System.out.println();
 
+        System.out.print("QUAL O NOME DO TITULAR : ");
+        contaBancaria.titular = sc.nextLine();
+        System.out.print("QUAL O NUMERO DA CONTA : ");
+        contaBancaria.numeroConta = sc.nextInt();
+        System.out.println();
+
+        System.out.println("1 - DADOS DA CONTA: ");
+        int escolha = sc.nextInt();
+        System.out.println(contaBancaria.toString(escolha));
+
+//        double valorDeposito = sc.nextDouble();
+//        System.out.println(String.format("%.3f", contaBancaria.depositar(valorDeposito)));
+//        System.out.println();
+//
+//        System.out.println("QUAL O VALOR DO SAQUE? ");
+//        double valorRetirar = sc.nextDouble();
+//        System.out.println(contaBancaria.toString() + contaBancaria.sacar(valorRetirar));
+
+        sc.close();
     }
 }
