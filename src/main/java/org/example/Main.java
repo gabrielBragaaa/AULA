@@ -2,6 +2,7 @@ package org.example;
 
 import org.example.entities.ContaBancaria;
 
+import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -13,6 +14,8 @@ public class Main {
 
         ContaBancaria contaBancaria = new ContaBancaria();
 
+        int opcao = -1;
+
         System.out.println("# BEM VINDO(A) AO BANCO BELEPOC #");
         System.out.println();
 
@@ -22,17 +25,33 @@ public class Main {
         contaBancaria.numeroConta = sc.nextInt();
         System.out.println();
 
-        System.out.println("1 - DADOS DA CONTA: ");
-        int escolha = sc.nextInt();
-        System.out.println(contaBancaria.toString(escolha));
+        while (opcao != 0) {
+            System.out.println("# MENU #  \n 1- DADOS DA CONTA \n 2- DEPOSITAR NA CONTA \n 3- SACAR VALOR \n 0- SAIR");
+            System.out.println();
+            opcao = sc.nextInt();
+            System.out.println();
+            if (opcao == 1){
+                System.out.println(contaBancaria.toString());
+                System.out.println();
+            } else if (opcao == 2){
+                System.out.print("QUAL O VALOR QUER DEPOSITAR $ ");
+                double depositar = sc.nextDouble();
+                contaBancaria.depositar(depositar);
+                System.out.println("DEPOSITO FEITO COM SUCESSO!");
+                System.out.println();
+            } else if (opcao == 3) {
+                System.out.println("QUAL VALOR VOÇE QUER SACAR ? $");
+                double sacar = sc.nextDouble();
+                contaBancaria.sacar(sacar);
+                System.out.println("SAQUE EFETUADO COM SUCESSO! ");
+                System.out.println();
+            } else if (opcao != 1 && opcao != 2 && opcao != 3 && opcao != 0) {
+                System.out.println("OPÇÃO INEXISTENTE! :(");
+                System.out.println();
+            }
+        }
+        System.out.println("ATE LOGO! :)");
 
-//        double valorDeposito = sc.nextDouble();
-//        System.out.println(String.format("%.3f", contaBancaria.depositar(valorDeposito)));
-//        System.out.println();
-//
-//        System.out.println("QUAL O VALOR DO SAQUE? ");
-//        double valorRetirar = sc.nextDouble();
-//        System.out.println(contaBancaria.toString() + contaBancaria.sacar(valorRetirar));
 
         sc.close();
     }
